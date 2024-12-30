@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    color:rgb(155, 7, 7);
+}
+.choiceButton{
+height: 100px;
+width: 100px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}
+
+.choiceImg{
+    height: 75px;
+}
+
+.Reset{
+    cursor: pointer;
+    font-family: cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    background: linear-gradient(135deg,rgb(0, 0, 0) ,35%,rgb(235, 5, 43));
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+.Reset:hover{
+    background: linear-gradient(135deg,rgb(37, 19, 19) ,35%,rgb(155, 7, 32)); 
+ transition:ease-in 0.3s ease-in 0.3s;}

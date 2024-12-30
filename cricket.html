@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket</title>
+    <link rel="stylesheet" href="cricket.css" />
+  </head>
+  <body>
+    <h1>Cricket Game</h1>
+    <div>
+      <button
+        class="choiceButton"
+        onclick="
+        let user='bat';
+        let cChoice=generateCompChoice();
+        let result=getResult(user,cChoice);
+        showResult(user,cChoice,result);
+        "
+      >
+        <img
+          src="pngtree-pattern-cricket-bat-clipart-ball-sports-png-image_6024969.jpg"
+          alt="Bat-img"
+          class="choiceImg"
+        />
+      </button>
+
+      <button
+        class="choiceButton"
+        onclick="
+        user='ball';
+        cChoice=generateCompChoice();
+        result=getResult(user,cChoice);
+        showResult(user,cChoice,result);
+        "
+      >
+        <img src="images.jpeg" alt="Ball-img" class="choiceImg" />
+      </button>
+
+      <button
+        class="choiceButton"
+        onclick="
+        user='stump';
+        cChoice=generateCompChoice();
+        result=getResult(user,cChoice);
+        showResult(user,cChoice,result);
+        "
+      >
+        <img
+          src="pngtree-cricket-stumps-and-ball-png-image_1733735.jpg"
+          alt="Stump-img"
+          class="choiceImg"
+        />
+      </button>
+    </div>
+    <h3 id="User-Move"></h3>
+    <h3 id="Comp-Move"></h3>
+    <h3 id="res"></h3>
+    <h3 id="Final-Score"></h3>
+
+    <button
+      class="Reset"
+      onclick="
+    localStorage.clear();
+    ResetScore();
+    "
+    >
+      Reset
+    </button>
+    <script src="cricket.js"></script>
+  </body>
+</html>
